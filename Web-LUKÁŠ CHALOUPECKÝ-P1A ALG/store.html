@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+        position: relative;
+        min-height: 100%;
+        min-height: 100vh;
+    }
+        footer {
+        position: absolute;
+        right: 0;bottom:0;left:0;
+    }
+        .card {
+        box-shadow: 0 4px 6px 0 rgba(25, 25, 26, 0.486);
+        border-radius: 0;
+        border: 0;
+    }
+        
+        .card {
+        transition: transform 0.2s ease;
+    }   
+        .card:hover {
+        transform: scale(1.02);
+    }
+        .bg-grey-trans {
+        background-color: #00000071
+    }
+        .bg-orange {
+        background-color: #ff7300;
+    }
+        .bg-black {
+        background-color: #000000;
+    }
+        .bg-dark-grey {
+        background-color: #070707
+    }
+        .bg-img_ {
+            background-image: url('./images/unnamed.png')
+        }
+    </style>
+</head>
+<body>
+<!---------------------------Navbar-------------------->
+    <div class="container-fluid bg-dark-grey">
+        <ul class="nav justify-content-end">
+            <li>
+                <a class="nav-link" href="./prihlaseni.html"><small><strong class="text-muted">Přihlásit se</strong></small></a>
+            </li>
+            <li>
+                <a class="nav-link" href="./registrace.html"><small><strong class="text-muted">Registrace</strong></small></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <h4><strong>FakeWeb</strong></h4>
+            </a>
+            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="begin.html" class="nav-link" alt="Jak se připojit">
+                            <strong>Jak se připojit</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./store.html" alt="kontaktní udáje př. hacker atd.">
+                            <strong>Obchod</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./novinky.html" alt="kontaktní udáje př. hacker atd.">
+                            <strong>Novinky</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-----------------------------------------SAMOTNÝ CONTENT------------------------------->
+    <div class="container-fluid bg-grey-trans py-2"></div>
+    <section>
+        <div class="container py-1"></div>
+        <div class="container py-1">
+            <div class="alert alert-info" role="alert">
+                <small>JE NÁM LÍTO ALE STORE JEŠTĚ NENÍ PŘIPRAVEN ZA NEDLOUHO SI ALE VIP ATD. MŮŽETE KOUPIT</small>
+            </div>
+        </div>
+
+        
+    </section>
+    <div class="container bg-dark-trans">
+        <div class="container bg-dark-trans">
+            <section class="mb-4">
+
+                
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Pokud máte však nějaké dotazy nebo nápady, napište nám.</h2>
+                
+                
+
+                <div class="row">
+
+                
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        
+                            <div class="row">
+
+                            
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Vaše jméno</label>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Váš E-mail</label>
+                                    </div>
+                                </div>
+                        
+
+                            </div>
+                    
+
+                    
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Termín</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+
+                    
+                            <div class="row">
+
+                            
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Zpráva</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a href="./store.html" class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Odeslat</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                
+
+                
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 420 111 222 333</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>fakeweb@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+            </section>
+        </div>
+        
+
+    
+    </div>
+    
+
+   
+    
+
+    
+
+
+
+
+
+
+<!-------------------------------------------------------FOOTER--------------------------->
+    <div class="container py-4"></div>
+    <div class="container py-4"></div>
+
+    <footer class="bg-dark text-center text-white">
+        
+        
+        
+                
+                
+    
+                
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://www.minecraft.net/en-us">Minecraft</a>
+        </div>
+    </footer>
+</body>
+</html>

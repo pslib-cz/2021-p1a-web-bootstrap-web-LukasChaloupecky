@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+        position: relative;
+        min-height: 100%;
+        min-height: 100vh;
+    }
+        footer {
+        position: absolute;
+        right: 0;bottom:0;left:0;
+    }
+        .card {
+        box-shadow: 0 4px 6px 0 rgba(25, 25, 26, 0.486);
+        border-radius: 0;
+        border: 0;
+    }
+        
+        .card {
+        transition: transform 0.2s ease;
+    }   
+        .card:hover {
+        transform: scale(1.02);
+    }
+        .bg-grey-trans {
+        background-color: #00000028
+    }
+        .bg-dark-trans {
+        background-color: #00000086
+    }
+        .bg-orange {
+        background-color: #ff7300;
+    }
+        .bg-black {
+        background-color: #000000;
+    }
+        .bg-dark-grey {
+        background-color: #040404
+    }
+        body {
+          background-image: url('./images/brick.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        .bg-img_ {
+            background-image: url('./images/unnamed.png')
+        }
+    </style>
+</head>
+<body>
+<!---------------------------Navbar-------------------->
+    <div class="container-fluid bg-dark-grey">
+        <ul class="nav justify-content-end">
+            <li>
+                <a class="nav-link" href="./prihlaseni.html"><small><strong class="text-muted">Přihlásit se</strong></small></a>
+            </li>
+            <li>
+                <a class="nav-link" href="./registrace.html"><small><strong class="text-muted">Registrace</strong></small></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <h2><strong>FakeWeb</strong></h2>
+            </a>
+            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="begin.html" class="nav-link" alt="Jak se připojit">
+                            <strong>Jak se připojit</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html" alt="kontaktní udáje př. hacker atd.">
+                            <strong>Obchod</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./novinky.html" alt="kontaktní udáje př. hacker atd.">
+                            <strong>Novinky</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-----------------------------------------------IP atd.---------------------------->
+    <section class="bg-dark-trans text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-flex">
+                <div class="text-center">
+                    <h1>IP:  <span class="text-warning">MC.FAKEWEB.NET</span></h1>
+                    <p class="lead text-light">
+                        Český server s dobrou odezvou a spostou miniher.
+                        Je pro všechny možné hráče, prostě je bez výjimek.
+                        Takže až budeš přpraven si zahrát, tak se připoj.
+                    </p>
+                    <a href="./begin.html">
+                        <button type="button" class="btn btn-lg btn-outline-primary bg-grey-trans">
+                            <span>&laquo; Chci začít hrát &raquo;</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------------------------------------------------------Čára-------------------->
+    <div class="container-fluid py-1 bg-grey-trans"></div>
+<!--------------------------------------------------------Minihry boxy--------------------->
+    <section class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-dark text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/bee.jpg" class="card-img-top" src="Card image top">
+                            <div class="card-body bg-dark">
+                                <h3 class="card-title text-center">Honey BEE</h5>
+                                <p class="card-text text-left py-3">Jednoduchá hra, max. na 5 min. ve které jde o sestřelení co nejvýce včel šípem.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-secondary text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/party.jpg" class="card-img-top" src="Card image top" height="175">
+                            <div class="card-body bg-dark">
+                                <h3 class="card-title text-center">PartyGames</h5>
+                                <p class="card-text text-left py-3">Směsice mnoha her, které jinde nenajdete. Můžete zde hrát v týmech či sami. Tak nečekej!!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-dark text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/bed.jpg" class="card-img-top" src="Card image top">
+                            <div class="card-body bg-dark">
+                                <h3 class="text-white card-title text-center">Bedwars</h5>
+                                <p class="card-text text-left text-light">Snad jenda z nejznámějších her v historii MC, kde se jednotlivci či týmy snaží zničit postel jiným hráčům aby prohráli.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-dark text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/tnt.jpg" class="card-img-top" src="Card image top">
+                            <div class="card-body bg-dark">
+                                <h3 class="card-title text-center">TNT Run</h5>
+                                <p class="card-text text-left py-3">Hra s jednoduchými pravidly, běhej po písku, ale nezř se na něm dlouho než se propadne, zabij ostatní svou prchlivostí a vyhraj.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-dark text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/dragon.jpg" class="card-img-top" src="Card image top">
+                            <div class="card-body bg-dark">
+                                <h3 class="card-title text-center">Dragon War</h5>
+                                <p class="card-text text-left py-3">Ukej se v endu s Ender drakem, ale pozor není jen tak ledajaký, je rychlejší silnější, a hlavně nebezpečnější. Dej si jeho hlavu nad krb.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm text-center py-3">
+                    <div class="card bg-dark text-white" style="width: 20rem;">
+                        <div class="card text-center">
+                                <img src="./images/nether.jpg" class="card-img-top" src="Card image top" height="155">
+                            <div class="card-body bg-dark">
+                                <h3 class="card-title text-center">Nether life</h5>
+                                <p class="card-text text-left py-3">Užij si život pouze v netheru, náš nether je ti přízpůsoben tak, aby si nemusel ani jednou vykročit do normálního světa. Tak objevuj naše nether tajemnství.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-------------------------------STORE --------------------------->
+    <section class="text-white">
+        <div class="container">
+            <div class="media">
+                <img class="mr-3" src="./images/vip.png" alt="Generic placeholder image" height="180" width="220">
+                <div class="media-body">
+                    <h4 class="mt-0">Ranky na serveru</h4>
+                    <p class="text-white">Naš server naní zastaralí a zde na našich officiálních stránkách si můžete koupit ranky, které vám otevřou dveře novým možnostem. Budete mít možnost využívat nové příkazy, získavat více coinů a atd.. Tak nečekej a vylepši si zábavu.<br></p>
+                    <button type="button" class="btn bg-orange btn-block"><a href="store.html"><small class="text-white"><strong>JÍT DO OBCHODU</strong></small></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3"></div>
+    </section>
+<!----------------------------------------------------FOOTER---------------------------------------->
+    <div class="container py-4"></div>
+    <div class="container py-4"></div>
+    
+    <footer class="bg-dark text-center text-white">
+        
+        
+           
+                
+                
+      
+                
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://www.minecraft.net/en-us">Minecraft</a>
+        </div>
+    </footer>
+</body>
+</html>
